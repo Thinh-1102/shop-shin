@@ -109,12 +109,13 @@
     position: absolute;
     width: 404px;
     height: 15px;
-    top: -6px;
+    top: -15px;
     right: 0;
+    z-index: 100;
 }
 .header__navbar-notify{
     position: absolute;
-    top: 135%;
+    top: 160%;
     right: 0;
     width: 404px;
     border: 1px solid #D3D3D3;
@@ -122,6 +123,16 @@
     transform-origin: top right;
     animation: headerNofityGrow ease-in 0.25s;
     display: none;
+    will-change: opacity,transform;
+}
+.header__navbar-notify::after{
+    content: "";
+    border: solid;
+    border-width: 15px 20px;
+    border-color:transparent transparent var(--white-color) transparent;
+    position: absolute;
+    top: -24px;
+    right: 0px;
 }
 @keyframes headerNofityGrow {
     from {
@@ -159,13 +170,13 @@
     display: flex;
     padding: 5px;
     text-decoration: none;
-    background-color: rgba(238, 75, 43, .3);
+    background-color: rgb(238 75 43 / 10%);
 }
 /* .header__navbar-notify-item--wieded{
     background-color: var(--while-color);
 } */
 .header__navbar-notify-item:hover{
-    background-color: #f5ebeb;
+    background-color: rgb(255, 255, 255);
 }
 .header__navbar-notify-img{
     width: 48px;
@@ -198,4 +209,118 @@
     text-decoration: none;
     color: var(--black-color);
     font-weight: 400;
+}
+
+.modal__body{
+    margin: auto;
+    min-height: 500px;
+    width: 500px;
+    border-radius: 5px;
+    background-color: var(--white-color);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.auth-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-form__container{
+    padding: 32px;
+}
+
+.auth-form__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth-form__heading{
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.auth-form__switch-ntb{
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.auth-form__input{
+    height: 40px;
+    width: 100%;
+    margin-top: 16px;
+    padding: 0 12px;
+    font-size: 1.4rem;
+    border:1px solid var(--border-color);
+    outline: none;
+    border-radius: 5px;
+}
+.auth-form__input:focus{
+    border-color: #777;
+}
+
+.auth-form__aside{
+    margin-top: 18px;
+}
+
+.auth-form__policy-text{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.auth-form__text-link{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.auth-form__controls{
+    margin-top: 80px;
+}
+
+.auth-form__controls{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn.btn--primaty{
+    background-color: var(--primary-color);
+    color: #fff;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.auth-form__socials{
+    padding: 16px 8px;
+    display: flex;
+    background-color: #f5f5f5;
+    justify-content: space-between;
+}
+
+.fa-brands.fa-facebook-square{
+    font-size: 1.8rem;
+    color: var(--white-color);
+}
+.fa-brands.fa-google{
+    font-size: 1.8rem;
+    color: var(--black-color);
+}
+
+.btn.btn--with-icon-face{
+    background-color: #3A5A98;
+    color: var(--white-color);
+    flex: 1;
+}
+
+.btn.btn--with-icon-google{
+    flex: 1;
+    background-color: #fff;
+    color: var(--black-color);
+}
+.auth-form__socials-text{
+    flex: 1;
+    text-align: center;
 }
