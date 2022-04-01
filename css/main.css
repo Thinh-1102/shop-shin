@@ -1,0 +1,201 @@
+
+.header{
+    height: 120px;
+    background-image: linear-gradient(0,#fe6433,#f53e2d);
+}
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.header__navbar-list {
+    margin-top: 4px;
+}
+.header__navbar-item{
+    margin: 0 8px;
+    position: relative;
+    min-height: 16px;
+}
+.header__navbar-item,
+.header__navbar-item-link{
+    font-size: 1.5rem;
+    list-style: none;
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 300;
+    display: inline-block;
+}
+
+.header__navbar-item--got-QR:hover .header__navbar-qr-list{
+    display: block;
+}
+.header__navbar-item:hover,
+.header__navbar-icon-link:hover,
+.header__navbar-item-link:hover{
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.header__navbar-item-got-notify:hover .header__navbar-notify{
+    display: block;
+}
+.header__navbar-item-strong{
+    font-weight: 500;
+}
+.header__navbar-item-nopoints:hover{
+    cursor: text;
+    color: var(--white-color);
+}
+.header__navbar-item-rightborder::after{
+    content: "";
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    width: 1px;
+    height: 16px;
+    background-color: #ddd;
+    transform: translateY(-50%);
+}
+.header__navbar-icon{
+    font-size: 1.6rem;
+    margin: 0 3px;
+}
+.header__navbar-icon-link{
+    color: var(--white-color);
+}
+
+/* QR code */
+.header__navbar-qr-list{
+    background-color: var(--white-color);
+    width: 186px;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    top: 135%;
+    display: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.3);
+    animation: fadeIn ease 0.3s;
+}
+.header__navbar-qr-list::before{
+    content: "";
+    display: block;
+    width: 186px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: -6px;
+}
+.header__navbar-qr{
+    width: 100%;
+}
+.header__navbar-qr-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__navbar-qr-google{
+    margin-left: 10px;
+}
+.header__navbar-qr-link:last-child{
+    margin-right: 10px;
+}
+.header__navbar-qr-google,
+.header__navbar-qr-story{
+    width: 70px;
+}
+/* header-notify */
+.header__navbar-notify::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 404px;
+    height: 15px;
+    top: -6px;
+    right: 0;
+}
+.header__navbar-notify{
+    position: absolute;
+    top: 135%;
+    right: 0;
+    width: 404px;
+    border: 1px solid #D3D3D3;
+    cursor: default;
+    transform-origin: top right;
+    animation: headerNofityGrow ease-in 0.25s;
+    display: none;
+}
+@keyframes headerNofityGrow {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.header__navbar-notify-header{
+    background-color: var(--white-color);
+    height: 40px;
+
+}
+.header__navbar-notify-header h3{
+    color: #999;
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 40px;
+    padding-left: 7px;
+    font-weight: 400;
+}
+
+.header__navbar-notify-listitems{
+    padding-left: 0;
+    background-color: var(--white-color);
+}
+
+.header__navbar-notify-body{
+
+}
+.header__navbar-notify-item{
+    display: flex;
+    padding: 5px;
+    text-decoration: none;
+    background-color: rgba(238, 75, 43, .3);
+}
+/* .header__navbar-notify-item--wieded{
+    background-color: var(--while-color);
+} */
+.header__navbar-notify-item:hover{
+    background-color: #f5ebeb;
+}
+.header__navbar-notify-img{
+    width: 48px;
+    object-fit: cover;
+}
+
+.header__navbar-notify-infor{
+    padding-left: 8px;
+}
+
+.header__navbar-notify-name{
+    display: block;
+    font-size: 1.4rem;
+    color: var(--black-color);
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 4px;
+}
+
+.header__navbar-notify-note{
+    display: block;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.header__navbar-notify-footer a{
+    padding: 8px 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: 400;
+}
