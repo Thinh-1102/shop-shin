@@ -2,8 +2,13 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
-    --primary-color: #ee4b2b;
+    --primary-color: #ee4c2bfb;
     --border-color: #dbdbdb;
+    --growth-from:0.7;
+    --growth-to:1;
+    --navbar-heigh:33px;
+    --header-heigh:120px;
+    --header-withsearch-heigh: calc(var(--header-heigh) - var(--navbar-heigh))
 }
 
 * {
@@ -39,6 +44,7 @@ html {
     right: 0;
     bottom: 0;
     left: 0;
+    animation: fadeIn linear 0.1s;
 }
 
 .modal__overlay{
@@ -89,6 +95,15 @@ html {
 
     to {
         opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from{
+        transform: scale(var(--growth-from));
+    }
+    to{
+        transform: scale(var(--growth-to));
     }
 }
 
