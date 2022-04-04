@@ -158,15 +158,34 @@
                                 trợ giúp
                             </a>
                         </li>
-                        <li class="header__navbar-item header__navbar-item-strong header__navbar-item-rightborder">Đăng
+                        <!-- <li class="header__navbar-item header__navbar-item-strong header__navbar-item-rightborder">Đăng
                             ký</li>
-                        <li class="header__navbar-item header__navbar-item-strong">Đăng nhập</li>
+                            <li class="header__navbar-item header__navbar-item-strong">Đăng nhập</li> -->
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="./img/img-intify/IMG_4977.JPG" alt="" class="header__navbar-user-avatar-img">
+                            <span class="header__navbar-user-name">Tiểu Bảo</span>
+
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đơn hàng của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="header__navbar-user-item header__navbar-user-item-logout">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <!-- header--with-search -->
                 <div class="header__with-search">
                     <div class="header__logo">
-                        <img src="./img/logo/logo.png" alt="" class="header__logo-img">
+                        <a href=""><img src="./img/logo/logo.png" alt="" class="header__logo-img"></a>
                     </div>
                     <div class="header__search">
                         <div class="header__search--input-wrap">
@@ -205,7 +224,7 @@
                                         <i class="fa-solid fa-check"></i>
                                     </span>
                                 </li>
-                            </ul> 
+                            </ul>
                         </div>
                         <div class="header__search--search">
                             <i class="fa-solid fa-magnifying-glass header__search--icon"></i>
@@ -223,6 +242,69 @@
                                 <div class="header__cart-list-infor">
                                     <span>Không có sản phẩm nào</span>
                                 </div>
+
+                                <!-- got cart -->
+                                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-items">
+                                    <li class="header__cart-list-item">
+                                        <div class="header__cart-list-item-img">
+                                            <img src="./img/img-intify/banh10.jpg" alt="">
+                                        </div>
+                                        <div class="header__cart-list-item-infor">
+                                            <div class="header__cart-list-item-top">
+                                                <h5 class="header__cart-list-item-name">bánh quy phô mai</h5>
+                                                <div class="header__cart-list-item-price-wrap">
+                                                    <span class="header__cart-list-item-price">150,000đ</span>
+                                                    <span class="header__cart-list-item-muti">x</span>
+                                                    <span class="header__cart-list-item-quaility">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-list-item-bottom">
+                                                <span class="header__cart-list-item-disription">size S</span>
+                                                <span class="header__cart-list-item-remove">xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-list-item">
+                                        <div class="header__cart-list-item-img">
+                                            <img src="./img/img-intify/banh10.jpg" alt="">
+                                        </div>
+                                        <div class="header__cart-list-item-infor">
+                                            <div class="header__cart-list-item-top">
+                                                <h5 class="header__cart-list-item-name">bánh quy phô mai</h5>
+                                                <div class="header__cart-list-item-price-wrap">
+                                                    <span class="header__cart-list-item-price">150,000đ</span>
+                                                    <span class="header__cart-list-item-muti">x</span>
+                                                    <span class="header__cart-list-item-quaility">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-list-item-bottom">
+                                                <span class="header__cart-list-item-disription">size S</span>
+                                                <span class="header__cart-list-item-remove">xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-list-item">
+                                        <div class="header__cart-list-item-img">
+                                            <img src="./img/img-intify/banh10.jpg" alt="">
+                                        </div>
+                                        <div class="header__cart-list-item-infor">
+                                            <div class="header__cart-list-item-top">
+                                                <h5 class="header__cart-list-item-name">bánh quy phô mai</h5>
+                                                <div class="header__cart-list-item-price-wrap">
+                                                    <span class="header__cart-list-item-price">150,000đ</span>
+                                                    <span class="header__cart-list-item-muti">x</span>
+                                                    <span class="header__cart-list-item-quaility">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-list-item-bottom">
+                                                <span class="header__cart-list-item-disription">size S</span>
+                                                <span class="header__cart-list-item-remove">xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="" class="btn btn--primaty header__cart-btn">Xem giỏ hàng</a>
                             </div>
                         </div>
                     </div>
@@ -230,18 +312,689 @@
             </div>
         </header>
         <div class="container">
+            <div class="grid">
+                <div class="grid__row app-content">
+                    <div class="grid__column-2">
+                        <nav class="catelogy">
+                            <h3 class="catelogy__heading">Danh mục</h3>
+                            <ul class="catelogy__list-items">
+                                <li class="catelogy__list-item catelogy__list-item-active">
+                                    <a href="" class="catelogy__list-item-link">Bánh trung thu</a>
+                                </li>
+                                <li class="catelogy__list-item">
+                                    <a href="" class="catelogy__list-item-link">Bánh trung thu</a>
+                                </li>
+                                <li class="catelogy__list-item">
+                                    <a href="" class="catelogy__list-item-link">Bánh trung thu</a>
+                                </li>
+                                <li class="catelogy__list-item">
+                                    <a href="" class="catelogy__list-item-link">Bánh trung thu</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <div class="home-filter__group">
+                                <span class="home-filter__label">Sắp xếp theo</span>
+                                <button class="home-filter__btn btn">Phổ biến</button>
+                                <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+                                <button class="home-filter__btn btn">Bán chạy</button>
 
+                                <div class="select-input">
+                                    <span class="select-input__prive">
+                                        giá
+                                    </span>
+                                    <i class="select-input__icon fa-solid fa-angle-down"></i>
+
+                                    <ul class="select-input__list">
+                                        <li class="select-input__item">
+                                            <a href="" class="select-input__item-link">Giá thấp đến cao</a>
+                                        </li>
+                                        <li class="select-input__item">
+                                            <a href="" class="select-input__item-link">Giá cao đến thấp</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-find">
+                                    <span class="home-filter__page-num">1</span>/14
+                                </span>
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn home-filter__page-btn--disable">
+                                        <i class="select-input__icon fa-solid fa-angle-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="select-input__icon fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <div class="grid__column-2-4">
+                                    <a href="" class="home-product__item">
+                                        <div class="home-product__item-img"
+                                            style="background-image: url(./img/img-intify/banh2.jpg);"></div>
+                                        <div class="home-product__item-infor">
+                                            <h4 class="home-product__item-name">Bánh quy phomai thơm ngon siêu hot</h4>
+                                            <div class="home-product__item-row home-product__item-prices">
+                                                <span class="home-product__item-prices-old">180.000đ</span>
+                                                <span class="home-product__item-prices-new">150.000đ</span>
+                                            </div>
+                                            <div class="home-product__item-row home-product__item-action">
+                                                <span class="home-product__item-action-like">
+                                                    <i
+                                                        class="home-product__item-action-like-icon-nomal fa-regular fa-heart"></i>
+                                                    <i
+                                                        class="home-product__item-action-like-icon-liked fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product__item-action-rating">
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product__item-sold">
+                                                    88 đã bán
+                                                </span>
+                                            </div>
+                                            <div class="home-product__item-row home-product__item-origin">
+                                                <span class="home-product__item-origin-brand">Baichyu</span>
+                                                <span class="home-product__item-origin-title">Jappan</span>
+                                            </div>
+                                            <div class="home-product__item-favourite">
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>yêu thích</span>
+                                            </div>
+                                            <div class="home-product__item-saleoff">
+                                                <span class="home-product__item-saleoff-percent">10%</span>
+                                                <span class="home-product__item-saleoff-label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="" class="home-product__item">
+                                        <div class="home-product__item-img"
+                                            style="background-image: url(./img/img-intify/banh2.jpg);"></div>
+                                        <div class="home-product__item-infor">
+                                            <h4 class="home-product__item-name">Bánh quy phomai thơm ngon siêu hot</h4>
+                                            <div class="home-product__item-row home-product__item-prices">
+                                                <span class="home-product__item-prices-old">180.000đ</span>
+                                                <span class="home-product__item-prices-new">150.000đ</span>
+                                            </div>
+                                            <div class="home-product__item-row home-product__item-action">
+                                                <span class="home-product__item-action-like">
+                                                    <i
+                                                        class="home-product__item-action-like-icon-nomal fa-regular fa-heart"></i>
+                                                    <i
+                                                        class="home-product__item-action-like-icon-liked fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product__item-action-rating">
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product__item-sold">
+                                                    88 đã bán
+                                                </span>
+                                            </div>
+                                            <div class="home-product__item-row home-product__item-origin">
+                                                <span class="home-product__item-origin-brand">Baichyu</span>
+                                                <span class="home-product__item-origin-title">Jappan</span>
+                                            </div>
+                                            <div class="home-product__item-favourite">
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>yêu thích</span>
+                                            </div>
+                                            <div class="home-product__item-saleoff">
+                                                <span class="home-product__item-saleoff-percent">10%</span>
+                                                <span class="home-product__item-saleoff-label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="" class="home-product__item">
+                                        <div class="home-product__item-img"
+                                            style="background-image: url(./img/img-intify/banh2.jpg);"></div>
+                                        <div class="home-product__item-infor">
+                                            <h4 class="home-product__item-name">Bánh quy phomai thơm ngon siêu hot</h4>
+                                            <div class="home-product__item-row home-product__item-prices">
+                                                <span class="home-product__item-prices-old">180.000đ</span>
+                                                <span class="home-product__item-prices-new">150.000đ</span>
+                                            </div>
+                                            <div class="home-product__item-row home-product__item-action">
+                                                <span class="home-product__item-action-like">
+                                                    <i
+                                                        class="home-product__item-action-like-icon-nomal fa-regular fa-heart"></i>
+                                                    <i
+                                                        class="home-product__item-action-like-icon-liked fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product__item-action-rating">
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product__item-sold">
+                                                    88 đã bán
+                                                </span>
+                                            </div>
+                                            <div class="home-product__item-row home-product__item-origin">
+                                                <span class="home-product__item-origin-brand">Baichyu</span>
+                                                <span class="home-product__item-origin-title">Jappan</span>
+                                            </div>
+                                            <div class="home-product__item-favourite">
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>yêu thích</span>
+                                            </div>
+                                            <div class="home-product__item-saleoff">
+                                                <span class="home-product__item-saleoff-percent">10%</span>
+                                                <span class="home-product__item-saleoff-label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="" class="home-product__item">
+                                        <div class="home-product__item-img"
+                                            style="background-image: url(./img/img-intify/banh2.jpg);"></div>
+                                        <div class="home-product__item-infor">
+                                            <h4 class="home-product__item-name">Bánh quy phomai thơm ngon siêu hot</h4>
+                                            <div class="home-product__item-row home-product__item-prices">
+                                                <span class="home-product__item-prices-old">180.000đ</span>
+                                                <span class="home-product__item-prices-new">150.000đ</span>
+                                            </div>
+                                            <div class="home-product__item-row home-product__item-action">
+                                                <span class="home-product__item-action-like">
+                                                    <i
+                                                        class="home-product__item-action-like-icon-nomal fa-regular fa-heart"></i>
+                                                    <i
+                                                        class="home-product__item-action-like-icon-liked fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product__item-action-rating">
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product__item-sold">
+                                                    88 đã bán
+                                                </span>
+                                            </div>
+                                            <div class="home-product__item-row home-product__item-origin">
+                                                <span class="home-product__item-origin-brand">Baichyu</span>
+                                                <span class="home-product__item-origin-title">Jappan</span>
+                                            </div>
+                                            <div class="home-product__item-favourite">
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>yêu thích</span>
+                                            </div>
+                                            <div class="home-product__item-saleoff">
+                                                <span class="home-product__item-saleoff-percent">10%</span>
+                                                <span class="home-product__item-saleoff-label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="" class="home-product__item">
+                                        <div class="home-product__item-img"
+                                            style="background-image: url(./img/img-intify/banh2.jpg);"></div>
+                                        <div class="home-product__item-infor">
+                                            <h4 class="home-product__item-name">Bánh quy phomai thơm ngon siêu hot</h4>
+                                            <div class="home-product__item-row home-product__item-prices">
+                                                <span class="home-product__item-prices-old">180.000đ</span>
+                                                <span class="home-product__item-prices-new">150.000đ</span>
+                                            </div>
+                                            <div class="home-product__item-row home-product__item-action">
+                                                <span class="home-product__item-action-like">
+                                                    <i
+                                                        class="home-product__item-action-like-icon-nomal fa-regular fa-heart"></i>
+                                                    <i
+                                                        class="home-product__item-action-like-icon-liked fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product__item-action-rating">
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product__item-sold">
+                                                    88 đã bán
+                                                </span>
+                                            </div>
+                                            <div class="home-product__item-row home-product__item-origin">
+                                                <span class="home-product__item-origin-brand">Baichyu</span>
+                                                <span class="home-product__item-origin-title">Jappan</span>
+                                            </div>
+                                            <div class="home-product__item-favourite">
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>yêu thích</span>
+                                            </div>
+                                            <div class="home-product__item-saleoff">
+                                                <span class="home-product__item-saleoff-percent">10%</span>
+                                                <span class="home-product__item-saleoff-label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="" class="home-product__item">
+                                        <div class="home-product__item-img"
+                                            style="background-image: url(./img/img-intify/banh2.jpg);"></div>
+                                        <div class="home-product__item-infor">
+                                            <h4 class="home-product__item-name">Bánh quy phomai thơm ngon siêu hot</h4>
+                                            <div class="home-product__item-row home-product__item-prices">
+                                                <span class="home-product__item-prices-old">180.000đ</span>
+                                                <span class="home-product__item-prices-new">150.000đ</span>
+                                            </div>
+                                            <div class="home-product__item-row home-product__item-action">
+                                                <span class="home-product__item-action-like">
+                                                    <i
+                                                        class="home-product__item-action-like-icon-nomal fa-regular fa-heart"></i>
+                                                    <i
+                                                        class="home-product__item-action-like-icon-liked fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product__item-action-rating">
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product__item-sold">
+                                                    88 đã bán
+                                                </span>
+                                            </div>
+                                            <div class="home-product__item-row home-product__item-origin">
+                                                <span class="home-product__item-origin-brand">Baichyu</span>
+                                                <span class="home-product__item-origin-title">Jappan</span>
+                                            </div>
+                                            <div class="home-product__item-favourite">
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>yêu thích</span>
+                                            </div>
+                                            <div class="home-product__item-saleoff">
+                                                <span class="home-product__item-saleoff-percent">10%</span>
+                                                <span class="home-product__item-saleoff-label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="" class="home-product__item">
+                                        <div class="home-product__item-img"
+                                            style="background-image: url(./img/img-intify/banh2.jpg);"></div>
+                                        <div class="home-product__item-infor">
+                                            <h4 class="home-product__item-name">Bánh quy phomai thơm ngon siêu hot</h4>
+                                            <div class="home-product__item-row home-product__item-prices">
+                                                <span class="home-product__item-prices-old">180.000đ</span>
+                                                <span class="home-product__item-prices-new">150.000đ</span>
+                                            </div>
+                                            <div class="home-product__item-row home-product__item-action">
+                                                <span class="home-product__item-action-like">
+                                                    <i
+                                                        class="home-product__item-action-like-icon-nomal fa-regular fa-heart"></i>
+                                                    <i
+                                                        class="home-product__item-action-like-icon-liked fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product__item-action-rating">
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product__item-sold">
+                                                    88 đã bán
+                                                </span>
+                                            </div>
+                                            <div class="home-product__item-row home-product__item-origin">
+                                                <span class="home-product__item-origin-brand">Baichyu</span>
+                                                <span class="home-product__item-origin-title">Jappan</span>
+                                            </div>
+                                            <div class="home-product__item-favourite">
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>yêu thích</span>
+                                            </div>
+                                            <div class="home-product__item-saleoff">
+                                                <span class="home-product__item-saleoff-percent">10%</span>
+                                                <span class="home-product__item-saleoff-label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="" class="home-product__item">
+                                        <div class="home-product__item-img"
+                                            style="background-image: url(./img/img-intify/banh2.jpg);"></div>
+                                        <div class="home-product__item-infor">
+                                            <h4 class="home-product__item-name">Bánh quy phomai thơm ngon siêu hot</h4>
+                                            <div class="home-product__item-row home-product__item-prices">
+                                                <span class="home-product__item-prices-old">180.000đ</span>
+                                                <span class="home-product__item-prices-new">150.000đ</span>
+                                            </div>
+                                            <div class="home-product__item-row home-product__item-action">
+                                                <span class="home-product__item-action-like">
+                                                    <i
+                                                        class="home-product__item-action-like-icon-nomal fa-regular fa-heart"></i>
+                                                    <i
+                                                        class="home-product__item-action-like-icon-liked fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product__item-action-rating">
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product__item-sold">
+                                                    88 đã bán
+                                                </span>
+                                            </div>
+                                            <div class="home-product__item-row home-product__item-origin">
+                                                <span class="home-product__item-origin-brand">Baichyu</span>
+                                                <span class="home-product__item-origin-title">Jappan</span>
+                                            </div>
+                                            <div class="home-product__item-favourite">
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>yêu thích</span>
+                                            </div>
+                                            <div class="home-product__item-saleoff">
+                                                <span class="home-product__item-saleoff-percent">10%</span>
+                                                <span class="home-product__item-saleoff-label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="" class="home-product__item">
+                                        <div class="home-product__item-img"
+                                            style="background-image: url(./img/img-intify/banh2.jpg);"></div>
+                                        <div class="home-product__item-infor">
+                                            <h4 class="home-product__item-name">Bánh quy phomai thơm ngon siêu hot</h4>
+                                            <div class="home-product__item-row home-product__item-prices">
+                                                <span class="home-product__item-prices-old">180.000đ</span>
+                                                <span class="home-product__item-prices-new">150.000đ</span>
+                                            </div>
+                                            <div class="home-product__item-row home-product__item-action">
+                                                <span class="home-product__item-action-like">
+                                                    <i
+                                                        class="home-product__item-action-like-icon-nomal fa-regular fa-heart"></i>
+                                                    <i
+                                                        class="home-product__item-action-like-icon-liked fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product__item-action-rating">
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product__item-sold">
+                                                    88 đã bán
+                                                </span>
+                                            </div>
+                                            <div class="home-product__item-row home-product__item-origin">
+                                                <span class="home-product__item-origin-brand">Baichyu</span>
+                                                <span class="home-product__item-origin-title">Jappan</span>
+                                            </div>
+                                            <div class="home-product__item-favourite">
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>yêu thích</span>
+                                            </div>
+                                            <div class="home-product__item-saleoff">
+                                                <span class="home-product__item-saleoff-percent">10%</span>
+                                                <span class="home-product__item-saleoff-label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="" class="home-product__item">
+                                        <div class="home-product__item-img"
+                                            style="background-image: url(./img/img-intify/banh2.jpg);"></div>
+                                        <div class="home-product__item-infor">
+                                            <h4 class="home-product__item-name">Bánh quy phomai thơm ngon siêu hot</h4>
+                                            <div class="home-product__item-row home-product__item-prices">
+                                                <span class="home-product__item-prices-old">180.000đ</span>
+                                                <span class="home-product__item-prices-new">150.000đ</span>
+                                            </div>
+                                            <div class="home-product__item-row home-product__item-action">
+                                                <span class="home-product__item-action-like">
+                                                    <i
+                                                        class="home-product__item-action-like-icon-nomal fa-regular fa-heart"></i>
+                                                    <i
+                                                        class="home-product__item-action-like-icon-liked fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product__item-action-rating">
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-yelow fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product__item-sold">
+                                                    88 đã bán
+                                                </span>
+                                            </div>
+                                            <div class="home-product__item-row home-product__item-origin">
+                                                <span class="home-product__item-origin-brand">Baichyu</span>
+                                                <span class="home-product__item-origin-title">Jappan</span>
+                                            </div>
+                                            <div class="home-product__item-favourite">
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>yêu thích</span>
+                                            </div>
+                                            <div class="home-product__item-saleoff">
+                                                <span class="home-product__item-saleoff-percent">10%</span>
+                                                <span class="home-product__item-saleoff-label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="pagination home-product__pagination">
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__link-icon fa-solid fa-angle-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link pagination-item__link--active">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">4</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">5</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">...</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">14</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__link-icon fa-solid fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Trung Tâm Trợ Giúp</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Blog của shop</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Mall</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Hướng Dẫn Mua Hàng</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Thanh Toán</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Vận Chuyển</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Trả Hàng & Hoàn Tiền</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Chăm Sóc Khách Hàng</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Chính Sách Bảo Hành</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Về shop của mình</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Giới Thiệu Về các chi nhánh tại Việt Nam</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Tuyển Dụng</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">điều khoản</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Chính Sách Bảo Mật</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Chính Hãng</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Kênh Người Bán</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Flash Sales</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Liên Hệ Với Truyền Thông</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <div class="footer__list-col-2">
+                            <div class="footer__list-col-item">
+                                <h3 class="footer__heading">THANH TOÁN</h3>
+                                <div class="footer__list-pay">
+                                    <div class="footer__list-pay">
+                                        <div class="footer__list-pay-item">
+                                            <img src="./img/visa.png" alt="" class="footer__list-pay-visa">
+                                        </div>
+                                        <div class="footer__list-pay-item">
+                                            <img src="./img/viettelpost.jpg" alt=""
+                                                class="footer__list-pay-viettel-post">
+                                        </div>
+                                        <div class="footer__list-pay-item">
+                                            <img src="./img/code.png" alt="" class="footer__list-pay-code">
+                                        </div>
+                                        <div class="footer__list-pay-item">
+                                            <img src="./img/jcb.jpg" alt="" class="footer__list-pay-jcb">
+                                        </div>
+                                        <div class="footer__list-pay-item">
+                                            <img src="./img/vietnampost.webp" alt=""
+                                                class="footer__list-pay-vietnampost">
+                                        </div>
+                                        <div class="footer__list-pay-item">
+                                            <img src="./img/tra-gop-0.png" alt="" class="footer__list-pay-loans">
+                                        </div>
+                                    </div>
 
+                                </div>
+                            </div>
+                            <div class="footer__list-col-item footer__list-col-item-last">
+                                <h3 class="footer__heading">đơn vị vận chuyển</h3>
+                                <div class="footer__list-pay">
+                                    <div class="footer__list-pay-item">
+                                        <img src="./img/grap.png" alt="" class="footer__list-pay-grap">
+                                    </div>
+                                    <div class="footer__list-pay-item">
+                                        <img src="./img/spurn.png" alt="" class="footer__list-pay-spurn">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">THEO DÕI CHÚNG TÔI TRÊN</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">
+                                    <i class="footer__socacial-icon fa-brands fa-facebook"></i>
+                                    Facebook</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">
+                                    <i class="footer__socacial-icon fa-brands fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">
+                                    <i class="footer__socacial-icon fa-brands fa-tiktok"></i>
+                                    tiktok
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">TẢI ỨNG DỤNG SHOP NGAY THÔI</h3>
+                        <div class="fooder__got-haft">
+                            <div class="footer__haft footer__haft--qr">
+                                <img src="./img/d91264e165ed6facc6178994d5afae79.png" alt=""
+                                    class="footer__app footer__qr-img">
+                            </div>
+                            <div class="footer__haft">
+                                <img src="./img/appstory.png" alt="" class="footer__app footer__app-store">
+                                <img src="./img/google.png" alt="" class="footer__app footer__app-ggplay">
+                                <img src="./img/gallery.png" alt="" class="footer__app footer__app-gallery">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 
     <!-- <div class="modal">
         <div class="modal__overlay"></div>
         <div class="modal__body"> -->
-            <!-- register form -->
-            <!-- <div class="auth-form">
+    <!-- register form -->
+    <!-- <div class="auth-form">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng ký</h3>
@@ -282,8 +1035,8 @@
                     </a>
                 </div>
             </div> -->
-            <!-- primaty form -->
-            <!-- <div class="auth-form">
+    <!-- primaty form -->
+    <!-- <div class="auth-form">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng nhập</h3>
@@ -317,7 +1070,7 @@
                     </a>
                 </div>
             </div> -->
-        <!-- </div>
+    <!-- </div>
     </div> -->
 </body>
 
