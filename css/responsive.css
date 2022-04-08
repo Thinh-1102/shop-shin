@@ -1,0 +1,125 @@
+/* mobile & tablet */
+@media (max-width: 1023px) {
+    :root {
+        --navbar-heigh: 0px;
+        --header-heigh: 68px;
+    }
+
+    .hide-on-mobile-table {
+        display: none;
+    }
+
+    .header__cart-list {
+        position: fixed;
+        top: var(--header-heigh);
+        right: 0;
+        width: 100%;
+    }
+    .header__cart-list::before{
+        display: none;
+    }
+
+    .header{
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        top: 0;
+    }
+
+    .container{
+        margin-top:calc(var(--header-heigh)+ var(--height-sortbar));
+    }
+    .mobile-category__items{
+        display: flex;
+    }
+    .header__cart-list-show-btn,
+    .header__cart-list-items {
+        padding: 0 calc((100% - 644px)/2)
+    }
+
+    .header__sort-bar{
+        display: flex;
+    }
+}
+
+/*tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-table {
+        display: none;
+    }
+    .app-content {
+        padding-top: 115px;
+    }
+    .home-product {
+        margin-top: -10px;
+    }
+
+    .header__cart {
+        width: 80px;
+        justify-content: right;
+    }
+
+}
+
+/*mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .app-content{
+        padding: 110px 12px 0;
+    }
+
+    .header__submenu--mobile{
+        display: block;
+    }
+
+    .header__with-search-subicon{
+        display: block;
+    }
+
+    .header__with-search{
+        justify-content: space-between;
+    }
+
+    .header__logo img{
+        width: 52px;
+        height: 52px;
+    }
+    .header__cart,
+    .header__logo-img {
+        width: unset;
+    }
+
+    .header__cart{
+        margin-right: 8px;
+    }
+    
+    .home-product {
+        margin-top: -10px;
+    }
+    .home-product__pagination {
+        margin: 20px 0 20px 0;
+        padding: 0;
+    }
+    .pagination-item {
+        margin: 0;
+    }
+    .pagination-item__link {
+        font-size: 1.4rem;
+        height: 24px;
+        min-width: 34px;
+        line-height: 24px;
+    }
+    .footer{
+        margin: 0 16px;
+    }
+    .footer__list-pay{
+        justify-content: center
+    }
+    .footer__list-col-item-last {
+        margin: 15px 0;
+    }
+
+
+}
